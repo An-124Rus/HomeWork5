@@ -2,17 +2,17 @@
 {
     private static void Main(string[] args)
     {
-        string name = "Alex";
-        string surname = "Ivanov";
-        string newName;
+        string name = "Елисей";
+        string surname = "Новичков";
         string newSurname;
 
-        Console.WriteLine(name + surname);
+        Console.WriteLine(name + " " + surname);
         Console.ReadKey();
-
-        newName = surname;
+        
         newSurname = name;
+        name = surname;
+        surname = newSurname;
 
-        Console.Write(newName + newSurname);
+        Console.WriteLine(name + " " + surname);
     }
 }
